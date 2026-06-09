@@ -1,3 +1,13 @@
+// DOWNLOAD APP ON MOBILE
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("../service-worker.js")
+      .then(() => console.log("Service Worker enregistré"))
+      .catch((err) => console.log("Erreur SW:", err));
+  });
+}
+
 // Charge dynamiquement le module correspondant à la page actuelle (lazy loading)
 // recupere l'attribut data-page de la balise body
 const page = document.body.dataset.page;
