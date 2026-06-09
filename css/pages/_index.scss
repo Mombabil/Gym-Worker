@@ -1,0 +1,13 @@
+@import "../components/header";
+@import "../components/running";
+@import "../components/chart";
+@import "../components/history";
+
+.card{
+    max-width: 500px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

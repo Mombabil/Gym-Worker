@@ -1,0 +1,102 @@
+// =============================================
+//  RESET CSS - FitLog App (Simple & Moderne)
+// =============================================
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;           // Base font size (1rem = 16px)
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $color-bg-primary;
+  color: $color-text-primary;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+// Reset des éléments de base
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-semibold;
+  line-height: 1.2;
+}
+
+p, ul, ol, dl, dd {
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+  font-weight: $font-weight-medium;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Reset des formulaires
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Accessibilité
+:focus-visible {
+  outline: 2px solid $color-accent-green;
+  outline-offset: 2px;
+}
+
+// Pour les écrans mobiles
+@media (max-width: 480px) {
+  html {
+    font-size: 15.5px;   // Légèrement plus petit sur très petits écrans
+  }
+}

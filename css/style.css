@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.card {
+  background-color: hsl(223, 16%, 13%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  color: hsl(0, 0%, 98%);
+  padding: 16px;
+}
+
+.btn-primary {
+  background-color: hsl(142, 88%, 52%);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.title {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: hsl(222, 18%, 8%);
+  color: hsl(0, 0%, 98%);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p, ul, ol, dl, dd {
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid hsl(142, 88%, 52%);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 15.5px;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header .headerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .headerTitle h1 {
+  color: hsl(0, 0%, 98%);
+}
+header .headerTitle h2 {
+  color: hsl(215, 12%, 48%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+header svg {
+  position: absolute;
+  right: 0;
+  width: 38px;
+  fill: hsl(79, 100%, 71%);
+  border: 1px solid hsl(223, 12%, 28%);
+  border-radius: 24px;
+  padding: 4px;
+}
+
+.running {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.running .runningTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.running .runningTitle h2 {
+  color: hsl(0, 0%, 98%);
+}
+.running .runningTitle h3 {
+  color: hsl(215, 12%, 48%);
+  font-weight: 400;
+}
+.running #runningForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.running #runningForm .runningStats {
+  display: grid;
+  grid-template-columns: 29% 29% 38%;
+  gap: 2%;
+}
+.running #runningForm .runningStats .runningStats_bloc {
+  min-height: 100px;
+  background: hsl(223, 13%, 18%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 12px 0;
+}
+.running #runningForm .runningStats .runningStats_bloc h2 {
+  font-size: 0.875rem;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.running #runningForm .runningStats .runningStats_bloc svg {
+  width: 50px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  fill: hsl(79, 100%, 71%);
+}
+.running #runningForm .runningStats .runningStats_bloc p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.running #runningForm .runningStats .runningStats_bloc p:nth-child(2) {
+  color: hsl(79, 100%, 71%);
+}
+.running #runningForm .runningStats .runningStats_bloc input {
+  width: 100%;
+  text-align: center;
+}
+.running #runningForm .runningStats .runningStats_bloc label {
+  width: 100%;
+  font-size: 1.125rem;
+  text-align: center;
+  visibility: hidden;
+}
+.running #runningForm .saveRunningStats button {
+  width: 100%;
+  padding: 12px 0;
+  background: hsl(79, 100%, 71%);
+  border-radius: 12px;
+  color: hsl(223, 12%, 22%);
+  font-size: 1.5rem;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.running #runningForm .saveRunningStats button:hover {
+  background: hsl(79, 93%, 61%);
+}
+.running #message {
+  text-align: center;
+  color: hsl(0, 82%, 58%);
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.chart .chartTitle {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.chart .chartTitle select {
+  background: hsl(222, 18%, 8%);
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid hsl(223, 12%, 28%);
+}
+.chart #chart {
+  width: 100%;
+  height: 400px !important;
+  max-height: 400px;
+}
+.chart .chart-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.card {
+  max-width: 500px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}/*# sourceMappingURL=style.css.map */

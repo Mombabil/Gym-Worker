@@ -1,0 +1,89 @@
+.running{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .runningTitle{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        h2{
+            color: $color-text-primary;
+        }
+        h3{
+            color: $color-text-muted;
+            font-weight: $font-weight-regular;
+        }
+    }
+    #runningForm{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        .runningStats{
+            display: grid;
+            grid-template-columns: 29% 29% 38%;
+            gap: 2%;
+            .runningStats_bloc{
+                min-height: 100px;
+                background: $color-bg-secondary;
+                border-radius: $border-radius-md;
+                box-shadow: $shadow-md;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: column;
+                padding: 12px 0;
+                h2{
+                    font-size: $font-size-sm;
+                    position: absolute;
+                    top: 12px;
+                    left: 12px;
+                }
+                svg{
+                    width: 50px;
+                    position: absolute;
+                    right: 4px;
+                    top: 4px;
+                    fill: $color-text-green;
+                }
+                p{
+                    @include flex-center;
+                    font-size: $font-size-xl;
+                    margin: 0;
+                    &:nth-child(2){
+                        color: $color-text-green;
+                    }
+                }
+                input{
+                    width: 100%;
+                    text-align: center;
+                }
+                label{
+                    width: 100%;
+                    font-size: $font-size-md;
+                    text-align: center;
+                    visibility: hidden;
+                }
+            }
+        }
+        .saveRunningStats{
+            button{
+                width: 100%;
+                padding: 12px 0;
+                background: $color-text-green;
+                border-radius: $border-radius-md;
+                color: $color-border;
+                font-size: $font-size-xl;
+                text-shadow: $shadow-md;
+                cursor: pointer;
+                &:hover{
+                    background: $color-text-green-light;
+                }
+            }
+        }
+    }
+    #message{
+        text-align: center;
+        color: $color-error;
+    }
+}
