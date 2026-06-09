@@ -48,6 +48,18 @@ export function updateChart() {
       maintainAspectRatio: false,
       animation: false,
       resizeDelay: 200,
+
+      plugins: {
+        legend: {
+          labels: {
+            font: {
+              size: 12,
+            },
+            boxWidth: 10,
+            boxHeight: 10,
+          },
+        },
+      },
     },
   });
 }
