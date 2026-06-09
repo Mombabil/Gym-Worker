@@ -197,10 +197,10 @@ header svg {
   left: 12px;
 }
 .running #runningForm .runningStats .runningStats_bloc svg {
-  width: 50px;
+  width: 20%;
   position: absolute;
-  right: 4px;
-  top: 4px;
+  right: 5%;
+  top: 5%;
   fill: hsl(79, 100%, 71%);
 }
 .running #runningForm .runningStats .runningStats_bloc p {
